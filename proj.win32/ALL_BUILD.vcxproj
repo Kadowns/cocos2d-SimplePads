@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1DD6A11C-C131-3064-B5CC-881CBA4B9FB1}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule D:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial" "-BD:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial/proj.win32" --check-stamp-file "D:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\CMakeLists.txt;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\3.14.3\CMakeCCompiler.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\3.14.3\CMakeSystem.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\feature_tests.c;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\feature_tests.cxx;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule D:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial" "-BD:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial/proj.win32" --check-stamp-file "D:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:/Opala Studios/tutorial/~/Cocos2d-x-Tutorial/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\CMakeLists.txt;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\3.14.3\CMakeCCompiler.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\3.14.3\CMakeSystem.cmake;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\feature_tests.c;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\feature_tests.cxx;D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{9870ADBD-A6D3-3C97-95B4-AE3C4C841C63}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\HelloCpp.vcxproj">
+      <Project>{66321E3C-E6C6-3BC2-A82E-3408DF21F3B0}</Project>
+      <Name>HelloCpp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{32C520C9-3152-3B61-A72A-A0CB2EC328A5}</Project>
+      <Name>cocos2d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{0448C432-21A9-3857-B648-24AF2CF6110D}</Project>
+      <Name>ext_clipper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{DF24D917-CD2D-32CE-A548-1DBB79A2F161}</Project>
+      <Name>ext_convertUTF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{740985E5-CEB3-3D28-A077-B211CF1ED72F}</Project>
+      <Name>ext_edtaa3func</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{ED9B7A29-2323-34D3-AE00-489D4055B47B}</Project>
+      <Name>ext_md5</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{24B80A8D-E3F9-3D34-8167-2E9DBF3C0C1F}</Project>
+      <Name>ext_poly2tri</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{0D55F643-1F43-3664-BCAC-5EBB7CED8B1C}</Project>
+      <Name>ext_recast</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{BB9E1EC6-A590-37E4-922D-0FA293E43123}</Project>
+      <Name>ext_tinyxml2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{AE86E80F-09F0-39F4-A277-A5CB89A54F49}</Project>
+      <Name>ext_unzip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{14569BA9-DC6A-3A5C-8B61-D74F280DA094}</Project>
+      <Name>ext_xxhash</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{FD381235-765D-3199-ADB7-DD05A57A967C}</Project>
+      <Name>ext_xxtea</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\engine\external\external.vcxproj">
+      <Project>{D5D2186C-A5A8-3DE6-A6BA-9F12A632D7BF}</Project>
+      <Name>external</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

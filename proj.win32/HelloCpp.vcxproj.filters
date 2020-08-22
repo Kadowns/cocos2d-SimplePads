@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\Opala Studios\tutorial\~\Cocos2d-x-Tutorial\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{7A3AD945-17BD-31DB-A34C-6ADEE400E66B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{63C0ED24-1531-3EE0-8C5F-3480CE28D666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{2267CF30-509F-3CFF-97CC-698E76205623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1CFDE4E8-BB80-3011-B5EB-36375CCC1E21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{F5B9DCE4-AC82-372C-9FF8-A1B914DC5C96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{075C2C1E-F10C-3D7B-B23F-027976724F3A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
