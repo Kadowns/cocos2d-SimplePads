@@ -37,7 +37,7 @@ add_subdirectory(${COCOS2DX_ROOT_PATH}/cocos ${ENGINE_BINARY_PATH}/cocos/core)
 
 # record sources, headers, resources...
 set(GAME_SOURCE)
-set(GAME_HEADER)
+set(GAME_HEADER Classes/SimplePadsGlobalDefinitions.h)
 
 set(GAME_RES_FOLDER
     "${CMAKE_CURRENT_SOURCE_DIR}/Resources"
@@ -49,11 +49,11 @@ endif()
 # add cross-platforms source files and header files 
 list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
-     Classes/HelloWorldScene.cpp
+        Classes/SimplePads.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
-     Classes/HelloWorldScene.h
+        Classes/SimplePads.h
      )
 
 if(ANDROID)
